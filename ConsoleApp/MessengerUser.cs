@@ -6,9 +6,16 @@ namespace ConsoleApp
 {
     public class MessengerUser : GeneralUser
     {
-        public MessengerUser(string name) : base(name)
+        public string GamerTag { get; set; }
+
+        public MessengerUser(string name, string gamerTag = "") : base(name)
         {
-            // Intentionally left blank.
+            GamerTag = gamerTag;
+        }
+
+        public override void Contact()
+        {
+            Console.WriteLine($"Contacting {Name} with tag {GamerTag} by messenger.");
         }
     }
 }

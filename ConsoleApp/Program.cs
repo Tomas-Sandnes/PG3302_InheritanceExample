@@ -4,9 +4,14 @@
     {
         static void Main(string[] args)
         {
-            GeneralUser person = new("Tomas");
+            GeneralUser generalUser = new("Tomas");
+            MessengerUser messengerUser = new("Eirik", "Superdude");
 
-            Console.WriteLine($"{person.Name}");
+            generalUser.Contact();
+            messengerUser.Contact();
+
+
+            //Console.WriteLine($"{generalUser.Name}");
         }
     }
 }

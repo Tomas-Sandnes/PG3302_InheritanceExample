@@ -13,7 +13,7 @@ namespace ConsoleApp
             Name = name;  
         }
 
-        public void Contact()
+        public virtual void Contact()
         {
             Console.WriteLine($"Contacting {Name} by email.");
         }
