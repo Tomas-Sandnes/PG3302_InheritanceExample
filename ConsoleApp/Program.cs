@@ -13,18 +13,17 @@
             SnapUser snapUser = new("Ina", "Giggles");
             users.Add(snapUser);
 
-            //generalUser.Contact();
-            //messengerUser.Contact();
-            //snapUser.Contact();
+            Console.WriteLine(generalUser);
+            Console.WriteLine(messengerUser);
+            Console.WriteLine(snapUser);
+
+            generalUser.Contact();
+            messengerUser.Contact();
+            snapUser.Contact();
 
             foreach (GeneralUser user in users) {
                 user.Contact();
             }
-
-
-
-
-            //Console.WriteLine($"{generalUser.Name}");
         }
     }
 }

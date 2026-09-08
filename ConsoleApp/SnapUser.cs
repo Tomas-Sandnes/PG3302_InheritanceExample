@@ -18,5 +18,10 @@ namespace ConsoleApp
         {
             Console.WriteLine($"Contacting {Name} with nickname {Nickname} by Snap.");
         }
+
+        public override string ToString()
+        {
+            return $"Snapuser | Name = {Name} | Nickname = {Nickname}";
+        }
     }
 }
