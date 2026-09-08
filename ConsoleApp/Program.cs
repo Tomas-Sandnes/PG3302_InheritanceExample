@@ -4,11 +4,24 @@
     {
         static void Main(string[] args)
         {
-            GeneralUser generalUser = new("Tomas");
-            MessengerUser messengerUser = new("Eirik", "Superdude");
+            List<GeneralUser> users = new();
 
-            generalUser.Contact();
-            messengerUser.Contact();
+            GeneralUser generalUser = new("Tomas");
+            users.Add(generalUser);
+            MessengerUser messengerUser = new("Eirik", "Superdude");
+            users.Add(messengerUser);
+            SnapUser snapUser = new("Ina", "Giggles");
+            users.Add(snapUser);
+
+            //generalUser.Contact();
+            //messengerUser.Contact();
+            //snapUser.Contact();
+
+            foreach (GeneralUser user in users) {
+                user.Contact();
+            }
+
+
 
 
             //Console.WriteLine($"{generalUser.Name}");
